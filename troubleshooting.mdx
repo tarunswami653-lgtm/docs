@@ -1,0 +1,97 @@
+---
+title: "Troubleshooting Common Turbo Game Issues"
+sidebarTitle: "Troubleshooting"
+description: "Resolve the most common Turbo game issues, including loading failures, unresponsive controls, score saving problems, and platform item spawn errors."
+---
+
+Even in a well-tuned arcade game like Turbo, you may occasionally run into technical hiccups. This page covers the most frequently reported issues, their likely causes, and the steps you can take to resolve them quickly. Work through the relevant section below and you should be back in action in just a few minutes.
+
+<AccordionGroup>
+  <Accordion title="Game Not Loading">
+    **Symptom:** The Turbo game screen stays blank, shows a loading spinner indefinitely, or crashes before reaching the main menu.
+
+    **Likely Causes:**
+    - Your browser or device does not meet the minimum requirements to run Turbo.
+    - A browser extension (such as an ad blocker or script blocker) is interfering with the game's initialization.
+    - Cached game data is corrupted or outdated.
+    - Your internet connection dropped during the initial asset load.
+
+    **How to Fix:**
+    1. **Refresh the page** — a simple hard refresh (Ctrl+Shift+R on Windows/Linux, Cmd+Shift+R on macOS) clears the page cache and restarts the load.
+    2. **Disable browser extensions** — temporarily turn off any ad blockers, script blockers, or privacy extensions, then reload. If the game loads, re-enable extensions one at a time to identify the culprit.
+    3. **Clear your browser cache** — go to your browser settings, clear cached images and files, then reload Turbo.
+    4. **Try a different browser** — if the issue persists, switch to a supported browser (Chrome, Firefox, or Edge on their latest stable versions).
+    5. **Check your internet connection** — ensure you have a stable connection. A brief disconnect during asset loading can cause the game to stall.
+  </Accordion>
+
+  <Accordion title="Controls Not Responding">
+    **Symptom:** Your keyboard inputs, mouse clicks, or touch gestures are not moving your character or triggering actions during gameplay.
+
+    **Likely Causes:**
+    - The game window does not have focus — clicking elsewhere before playing can cause input to be ignored.
+    - A conflicting browser shortcut is intercepting your key presses.
+    - Touch input is not enabled or calibrated correctly on mobile devices.
+    - A peripheral (keyboard or controller) is not being recognized.
+
+    **How to Fix:**
+    1. **Click directly on the game canvas** to ensure it has focus before pressing any keys or buttons.
+    2. **Avoid using Tab or arrow keys** in the browser before starting — these can redirect focus away from the game element.
+    3. **Disable browser keyboard shortcuts** — some browsers intercept keys like Space or arrow keys for page scrolling. Try pressing F11 to enter fullscreen mode, which typically suppresses browser shortcuts.
+    4. **On mobile, recalibrate touch zones** — if swipe or tap inputs are drifting, try rotating your device and back to portrait/landscape to reset the touch input area.
+    5. **Test with a different input device** — plug in a different keyboard or try the on-screen controls if available to rule out a hardware issue.
+  </Accordion>
+
+  <Accordion title="Score Not Saving">
+    **Symptom:** Your high score resets between sessions, your cumulative score does not carry over between level screens, or your unlocked milestones disappear after closing the game.
+
+    **Likely Causes:**
+    - Browser local storage is disabled or set to private/incognito mode, which prevents persistent data from being written.
+    - You cleared your browser data (including site data) since your last session.
+    - You are playing on a guest or temporary account rather than a signed-in account.
+    - A browser update reset site permissions, clearing saved game data.
+
+    **How to Fix:**
+    1. **Check your storage permissions** — in your browser settings, ensure that Turbo's domain is allowed to store local data. Look for "Cookies and site data" settings and confirm the site is not blocked.
+    2. **Avoid incognito/private mode** — scores and progress saved during a private browsing session are deleted when the window closes. Play in a standard browser window to preserve your data.
+    3. **Sign in to your account** — if Turbo supports cloud saves, sign in to your player account before starting a session. Cloud-saved scores persist across devices and browser clears.
+    4. **Do not clear site data** — when clearing your browser cache, choose "Cached images and files" only, not "Cookies and site data," to avoid deleting your saved progress.
+  </Accordion>
+
+  <Accordion title="Items Not Appearing on Platforms">
+    **Symptom:** Platform rows that should be occupied — such as the upper-middle row (Turbo Soda) or the lower-middle row (Turbo Chips) — appear blank when they should have items, or items that were cleared do not respawn as expected at higher difficulty levels.
+
+    **Likely Causes:**
+    - The game's asset sprites failed to load, causing items to be invisible even though the game logic is running correctly.
+    - You are on a level tier where the item spawn system has not yet activated (e.g., on Level 3 or below where spawn rates are low).
+    - A rendering bug is causing item sprites to be drawn behind the platform layer, making them invisible.
+    - Your device's GPU or graphics settings are filtering out certain sprite layers.
+
+    **How to Fix:**
+    1. **Hard refresh the game** — assets that failed to load during the initial session will reload on a fresh page load.
+    2. **Check your level tier** — confirm you are on Level 4 or above if you expect dynamic respawning. At Tier 1, platforms refill slowly and the bottom row stays blank intentionally.
+    3. **Lower your graphics quality settings** — if Turbo has a quality toggle in its settings menu, reducing it can resolve sprite layering issues caused by GPU rendering modes.
+    4. **Update your graphics drivers** — on desktop, outdated GPU drivers can cause rendering anomalies with 2D sprite games. Check your GPU manufacturer's site for the latest driver.
+    5. **Try a different device** — if items appear correctly on another device, the issue is specific to your hardware or browser rendering pipeline.
+  </Accordion>
+
+  <Accordion title="Performance Issues (Lag or Low Frame Rate)">
+    **Symptom:** The game runs slowly, stutters between frames, drops to low frame rates during busy level screens, or input feels delayed relative to what's happening on screen.
+
+    **Likely Causes:**
+    - Other browser tabs or applications are consuming CPU or memory, leaving fewer resources for the game.
+    - Hardware acceleration is disabled in your browser, forcing the game to render using software rendering instead of your GPU.
+    - You are playing on a device that does not meet the recommended hardware specifications for Turbo.
+    - A large number of spawned items on screen simultaneously is taxing the rendering engine.
+
+    **How to Fix:**
+    1. **Close unnecessary browser tabs and background applications** — Turbo benefits from having dedicated CPU and memory resources. Closing other tabs before playing can significantly improve frame rate.
+    2. **Enable hardware acceleration** — in your browser settings, search for "hardware acceleration" and ensure it is turned on. This allows Turbo to use your GPU for rendering.
+    3. **Clear the browser cache** — a bloated cache can slow down asset retrieval mid-session. Clear cached files and restart the browser before launching Turbo.
+    4. **Reduce display resolution or zoom level** — playing at a lower zoom level (try 90% or 80% browser zoom) reduces the number of pixels the game must render each frame.
+    5. **Restart your device** — if the slowdown started suddenly mid-session, a device restart clears memory leaks and background processes that may be interfering.
+  </Accordion>
+</AccordionGroup>
+
+<Note>
+  If you've worked through the steps above and are still experiencing an issue, please contact Turbo support directly. When you reach out, include your browser version, operating system, a description of the issue, and — if applicable — the level number or screen where the problem occurs. This information helps the support team diagnose and resolve your issue as quickly as possible.
+</Note>

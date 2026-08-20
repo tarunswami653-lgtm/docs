@@ -1,13 +1,11 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
+  "projectType": "saas",
+  "projectName": "Turbo",
+  "projectDescription": "Turbo is an arcade-style game featuring collectible branded items (Turbo Soda, Turbo Chips) on wooden platform levels that players navigate to collect or avoid.",
   "theme": "almond",
-  "name": "Turbo",
-  "colors": {
-    "primary": "#ef7025",
-    "light": "#eec9bc",
-    "dark": "#4fa1ab"
-  },
-  "favicon": "/favicon.svg",
+  "primaryColor": "#ef7025",
+  "lightColor": "#eec9bc",
+  "darkColor": "#4fa1ab",
   "navigation": {
     "tabs": [
       {
@@ -56,14 +54,18 @@
       }
     ]
   },
-  "navbar": {
-    "primary": {
-      "type": "button",
-      "label": "Play Now",
-      "href": "https://turbo.game"
-    }
-  },
-  "footer": {
-    "socials": {}
-  }
+  "keyFeatures": [
+    "Wooden platform levels with gap-based navigation",
+    "Collectible branded items (Turbo Soda, Turbo Chips)",
+    "Color-coded item glows indicating effect type (red = danger/penalty, green = reward)",
+    "Multi-tier vertical level layout",
+    "Arcade-style scoring and progression"
+  ],
+  "publicApiSurface": [
+    "Turbo Soda — red-glowing collectible on wooden platform",
+    "Turbo Chips — green-glowing collectible on wooden platform",
+    "Wooden platform — static level element players land and traverse",
+    "Platform gap — navigational hazard between platform segments",
+    "Bottom platform row — lowest level tier, currently empty/blank"
+  ]
 }

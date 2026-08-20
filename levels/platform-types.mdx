@@ -1,0 +1,70 @@
+---
+title: "Platform Segment Types and Gap Mechanics"
+sidebarTitle: "Platform Types"
+description: "Learn about Turbo's left and right platform segments, the center gap between them, and the visual differences between blank and occupied platform states."
+---
+
+Every platform row in Turbo is made up of the same fundamental building blocks: a left segment, a right segment, and the center gap that divides them. Knowing how each segment type behaves — and being able to read whether a platform is blank or occupied at a glance — is critical to navigating levels efficiently and avoiding costly mistakes.
+
+## Segment Anatomy
+
+Each horizontal row is split into three zones from left to right:
+
+- **LEFT Segment** — the wooden platform section on the left side of the screen where you can land and stand.
+- **CENTER GAP** — the open space in the middle of the row. There is no platform here; falling into the gap drops you down to the next row below.
+- **RIGHT Segment** — the wooden platform section on the right side of the screen, mirroring the left segment.
+
+The center gap is consistent across all rows and all level screens. You must jump across it deliberately — there is no platform to catch you in the middle.
+
+## Platform Types Reference
+
+The following table summarizes every platform type you will encounter across Turbo's levels, including which rows they appear in and their key properties.
+
+| Platform Type | Location | Contains Items | Safe to Land On | Notes |
+|---|---|---|---|---|
+| Blank Bottom Platform | Bottom row (row 4) | No | Yes | Starting position and safe zone; empty floor-level row |
+| Blank Top Platform | Top row (row 1) | No (early levels) | Yes | May fill with items in higher difficulty levels |
+| Occupied — Turbo Soda | Upper-middle row (row 2) | Yes — Turbo Soda | Yes | Clearing items here contributes to score |
+| Occupied — Turbo Chips | Lower-middle row (row 3) | Yes — Turbo Chips | Yes | Different collectible behavior from Turbo Soda |
+| Transitioning Platform | Any row | Partially cleared | Yes | Platform mid-state between occupied and blank |
+| High-Difficulty Spawn | Any row (late levels) | Yes — new item types | Yes | Appears on previously blank rows as difficulty increases |
+
+## Row-by-Row Breakdown
+
+### Top Row (Row 1)
+The top row uses the same LEFT/GAP/RIGHT segment structure as every other row. In early levels it is blank — no items are present, making it a secondary safe zone above the action. As difficulty scales, new items begin spawning here, transforming it from a refuge into another row you must actively manage.
+
+### Upper-Middle Row (Row 2)
+This row is consistently occupied by **Turbo Soda** items in the early and mid-game. The visual appearance of the platform changes when items are present: you will see the item object resting on top of the wooden segment. Once cleared, the segment returns to its blank wooden state.
+
+### Lower-Middle Row (Row 3)
+The lower-middle row mirrors the upper-middle row in structure but hosts **Turbo Chips** instead of Turbo Soda. Visually distinguish between the two item types by their shape and color cues — confusing them under pressure is a common beginner mistake.
+
+### Bottom Row (Row 4)
+The bottom row is the **blank wooden floor-level platform**. It never contains items in standard gameplay at the start of a level. Both the LEFT and RIGHT segments are present as usual, and the CENTER GAP still exists — but there are no collectibles, hazards, or spawned objects on this row. It is your starting point and your fallback position throughout each level.
+
+## Blank vs. Occupied Platform States
+
+Platforms in Turbo have two primary visual states:
+
+**Blank State**
+- The wooden platform surface is clear and unobstructed.
+- No items sit on top of the segment.
+- Safe to land on and move across freely.
+- Represented by the plain wooden plank texture.
+
+**Occupied State**
+- An item (Turbo Soda, Turbo Chips, or a higher-level variant) rests visibly on the platform segment.
+- You must interact with or avoid the item depending on your current objective.
+- The platform itself remains safe to land on; the item on top is what you need to manage.
+
+## Center Gap Mechanics
+
+The center gap is not merely decorative — it is an active gameplay element. Key properties of the gap include:
+
+- **No platform exists** in the gap zone. Any movement into the gap without sufficient jump height or momentum results in a fall.
+- **Falling through the gap** drops you to the row directly below. From the bottom row, falling through the gap has the most severe consequences since there is no lower platform to catch you.
+- **Gap width is consistent** across all rows in a given level, but may vary slightly between level screens as difficulty increases.
+- **Jumping across the gap** from the LEFT segment to the RIGHT segment (or vice versa) is a core movement skill. Practice timing your jumps relative to your horizontal momentum to clear the gap cleanly.
+
+Understanding the interplay between LEFT segments, RIGHT segments, and the CENTER GAP — and being able to instantly read whether a platform is blank or occupied — forms the mechanical foundation of every decision you make in Turbo.

@@ -1,0 +1,47 @@
+---
+title: "Platform Types and Movement in Turbo Levels"
+sidebarTitle: "Platforms"
+description: "Learn how wooden platform segments, center gaps, and vertical tiers shape navigation and movement across every Turbo level."
+---
+
+Every Turbo level is built around a series of horizontal wooden platform planks that span the screen from left to right. Rather than forming a single solid floor, each row is deliberately split into a **LEFT segment** and a **RIGHT segment**, divided by a **CENTER GAP** in the middle. Mastering how these segments are arranged — and knowing which rows currently hold items — is essential to surviving and progressing through each stage.
+
+<Tabs>
+  <Tab title="Platform Layout">
+    Turbo levels stack multiple platform rows at distinct vertical heights, creating a tiered playing field you navigate up and down:
+
+    | Row | Position | Status |
+    |-----|----------|--------|
+    | Top Row | Highest elevation | Active — items present |
+    | Upper-Middle Row | Second tier | Active — items present |
+    | Lower-Middle Row | Third tier | Active — items present |
+    | Bottom Row | Ground level | **Empty — no items placed** |
+
+    Each row except the bottom contains both Turbo Chips and Turbo Soda cans resting on top of the LEFT and RIGHT plank segments. The wooden planks themselves glow beneath any item placed on them — green beneath Turbo Chips, red beneath Turbo Soda — giving you an instant visual read of what lies ahead before you land.
+
+    The **center gap** between the LEFT and RIGHT segments of every row is not just decorative. Falling through a gap drops you to the platform row directly below. If you fall through the gap on the bottom row, you exit the platform stack entirely, which typically ends the current run or triggers a penalty depending on the level rules.
+  </Tab>
+  <Tab title="Movement Rules">
+    Movement across platform segments follows a set of consistent rules that apply on every tier:
+
+    **Landing**
+    - You can land on any LEFT or RIGHT segment from above.
+    - Landing on a segment with a **Turbo Chips** bag collects the item automatically.
+    - Landing on a segment with a **Turbo Soda** can triggers the hazard penalty immediately.
+    - Landing on an **empty segment** (such as the bottom row) is always safe with no effect.
+
+    **Traversal**
+    - You move horizontally along a plank segment until you reach the center gap or the screen edge.
+    - Stepping into the center gap causes you to fall to the next lower row.
+    - You cannot move directly from the LEFT segment to the RIGHT segment without first dropping through the gap and repositioning.
+
+    **Vertical Navigation**
+    - Moving upward requires jumping from your current tier to the row above.
+    - Jumping height is fixed per jump — plan your arc to land on the intended LEFT or RIGHT segment, not into the gap.
+    - The bottom row acts as the lowest safe landing zone; use it to reposition when the upper rows are heavily populated with hazards.
+  </Tab>
+</Tabs>
+
+<Note>
+  The **bottom platform row is intentionally blank** — no Turbo Chips or Turbo Soda cans are placed on it. This makes it a safe landing zone and a useful repositioning space when upper tiers are crowded with hazards. Use the bottom row strategically to reset your position without risking an accidental penalty before climbing back up toward collectible items.
+</Note>

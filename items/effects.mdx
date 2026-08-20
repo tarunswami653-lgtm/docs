@@ -1,0 +1,118 @@
+---
+title: "Item Effects and Power-Up System in Turbo"
+sidebarTitle: "Effects"
+description: "A full reference for every item effect in Turbo — from Turbo Chips' score and speed bonuses to Turbo Soda's penalties — plus duration, stacking rules, and the color-coded glow system."
+---
+
+Every item you encounter in Turbo carries a consequence — positive or negative — and understanding those consequences in detail is what separates a casual run from a top-scoring one. The game's item effect system is straightforward to learn but has enough depth in stacking and timing that it rewards players who study it closely. This page is your complete reference for how Turbo Chips and Turbo Soda affect your run, how long those effects last, and how they interact with each other.
+
+## The Color-Coded Glow System
+
+Before any effect is applied, the game signals item type through a **color-coded glow** that pulses beneath each item on its platform. This glow is the universal indicator for what you're about to collect.
+
+<CardGroup cols={2}>
+  <Card title="Green Glow — Reward" icon="circle-check" color="#22c55e">
+    A green pulsing glow beneath a platform segment means a **Turbo Chips** bag is present. Steer toward green glows to collect points, trigger speed boosts, and build combo multipliers.
+  </Card>
+  <Card title="Red Glow — Hazard" icon="circle-xmark" color="#ef4444">
+    A red pulsing glow beneath a platform segment means a **Turbo Soda** can is present. Avoid red glows to prevent point deductions, speed debuffs, and life loss.
+  </Card>
+</CardGroup>
+
+The glow system is designed to give you advance warning before you're close enough to make contact. In high-speed sections, the glow is often the only signal you have time to read — item-level identification (the green bag vs. the red can) requires you to be closer. Train yourself to route by glow color first.
+
+<Note>
+The glow disappears as soon as the item is collected or despawns. A platform that was glowing red or green and now shows no glow is safe to land on.
+</Note>
+
+## Turbo Chips Effects
+
+Turbo Chips are the primary positive item in the game. Collecting a bag applies the following effects, which can compound with each other during an active run.
+
+### Points Boost
+
+Every Turbo Chips bag you collect adds a direct bonus to your score. The base points value scales with how far into the run you are — the further you've progressed, the more each bag is worth. When a combo multiplier is active, this base value is multiplied before being added to your total.
+
+### Speed Boost
+
+Collecting Turbo Chips temporarily increases your movement speed. This lets you cover more ground, reach the next platform cluster faster, and close gaps between collection opportunities. If you collect another Turbo Chips bag while a speed boost is already active, the duration refreshes and may extend depending on your combo level.
+
+### Combo Multiplier
+
+Consecutive Turbo Chips pickups without triggering a penalty build a **combo multiplier**. Each bag in an unbroken chain raises the multiplier, increasing the points value of every subsequent pickup in that chain. The multiplier accumulates additively per pickup and can reach high values during extended clean streaks.
+
+## Turbo Soda Effects
+
+Turbo Soda is the primary hazard item. Making contact with a Turbo Soda can applies one or more of the following penalties instantly.
+
+### Point Penalty
+
+A fixed number of points is subtracted from your current score on contact. The deduction is applied immediately and cannot be reversed. In later stages of a run, this deduction can be significant relative to the points you've built up.
+
+### Speed Debuff
+
+Contact with Turbo Soda temporarily reduces your movement speed. This debuff is particularly damaging in fast-paced sections or when you need to reach a Turbo Chips bag quickly to maintain a combo chain. The debuff expires after a set duration.
+
+### Life Loss
+
+In standard and competitive game modes, touching Turbo Soda costs you one life. Losing all lives ends the run. Life loss is the harshest possible outcome of a Turbo Soda contact and is the primary reason the glow-reading skill is so important to develop.
+
+## Effects at a Glance
+
+<CardGroup cols={2}>
+  <Card title="Turbo Chips — Positive Effects" icon="bag-shopping" color="#22c55e">
+    **Points Boost** — Immediate score addition, scaled by run progress
+
+    **Speed Boost** — Temporary movement speed increase; refreshes on consecutive pickups
+
+    **Combo Multiplier** — Chains consecutive pickups to amplify points per bag; resets on penalty contact
+  </Card>
+  <Card title="Turbo Soda — Negative Effects" icon="ban" color="#ef4444">
+    **Point Penalty** — Immediate score deduction; cannot be cancelled
+
+    **Speed Debuff** — Temporary movement speed reduction; expires after a fixed duration
+
+    **Life Loss** — One life deducted per contact in standard modes; run ends at zero lives
+  </Card>
+</CardGroup>
+
+## Effect Duration Reference
+
+| Effect | Source | Duration |
+|---|---|---|
+| Points Boost | Turbo Chips | Instant (applied on contact) |
+| Speed Boost | Turbo Chips | Temporary; refreshes on re-collect |
+| Combo Multiplier | Turbo Chips (chain) | Active until chain breaks |
+| Point Penalty | Turbo Soda | Instant (applied on contact) |
+| Speed Debuff | Turbo Soda | Temporary; fixed duration |
+| Life Loss | Turbo Soda | Permanent for the current run |
+
+## Stacking Rules
+
+Understanding how effects stack — or cancel — is key to maximizing your performance:
+
+<CardGroup cols={1}>
+  <Card title="Speed Boost + Speed Boost" icon="bolt">
+    Collecting a second Turbo Chips bag while a speed boost is already active **refreshes the duration** rather than adding a second independent timer. You do not move twice as fast, but your boost window is extended.
+  </Card>
+  <Card title="Combo Multiplier Growth" icon="layer-group">
+    The combo multiplier **increments with each consecutive Turbo Chips pickup**. There is no hard cap documented in the base game — extended clean streaks will keep raising your multiplier. Protecting a high-value combo chain is your single highest-priority objective.
+  </Card>
+  <Card title="Combo Multiplier Reset" icon="rotate-left">
+    Any contact with Turbo Soda, any life loss, or any extended gap without a pickup **resets your combo multiplier to zero**. The speed boost is also cancelled on a Turbo Soda hit. There is no partial recovery — the chain must be rebuilt from scratch.
+  </Card>
+  <Card title="Speed Debuff Interaction" icon="gauge">
+    If you are under the effect of a Turbo Chips speed boost and then contact Turbo Soda, the **speed debuff overrides the boost**. Your speed drops below normal for the debuff duration, after which it returns to the base rate — not the boosted rate.
+  </Card>
+</CardGroup>
+
+<Warning>
+Stacking Turbo Soda hits in quick succession is a run-ending pattern. Each hit applies its full penalty independently: you can lose points, lose your combo, suffer a speed debuff, **and** lose a life all from a single contact — and then face the same outcome again on the next hit. If you make contact with one Turbo Soda, prioritize putting distance between yourself and any red-glowing platforms before resuming aggressive collection.
+</Warning>
+
+## Using the Effect System Strategically
+
+- **Build your combo chain early and protect it.** A multiplier of 3× or 4× makes every Turbo Chips bag in the back half of your run far more valuable. The earlier you start the chain, the more total value it generates.
+- **Use the speed boost window to chain pickups.** When a speed boost activates, scan ahead for the nearest green-glowing platform and move to it immediately — collecting in boost state helps you refresh the boost and compound the multiplier simultaneously.
+- **Treat a Turbo Soda hit as a full reset moment.** After contact, your combo is gone and your speed is reduced. Stop trying to collect aggressively until the debuff clears — play defensively, re-read glow signals, and rebuild from a clean state.
+- **Match your risk tolerance to your current combo level.** At a low combo (1× or 2×), taking a slightly risky route to reach a Turbo Chips bag may be worth it. At a high combo (5×+), the value of protecting that multiplier outweighs almost any individual pickup opportunity.
